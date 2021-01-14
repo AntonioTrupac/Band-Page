@@ -45,6 +45,7 @@ html, body {
 .main-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 500px;
   background-color: rgba(0,0,0,.6);
   background-image:url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
