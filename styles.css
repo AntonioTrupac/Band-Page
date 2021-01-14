@@ -1,71 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@200&display=swap');
+/*  kad nes npr ne radi, inspektaj, vidi kaj je highlightano, do kuda ide, jel siroko 100% ili ide samo do odredene sirine, 
+    mijenjaj css direkt u browseru da ubrzas proces i vidis kaj mozes kaj ne mozes delat
+*/
 
-*{
+* {
  box-sizing: border-box;
  font-family: 'Imbue', serif;
- color: #777;
 }
 
-html, body{
+html, body {
  padding: 0;
  margin: 0;
 }
 
 /* NAVIGATION */
-.nav ul{
- margin: 0;
+
+.main-nav {
+  position: absolute;
+  width: 100%;
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(255,255,255, .3);
+ }
+
+.nav ul {
+  display: flex;
+  justify-content: center;
 }
 
-.nav li{
- display: inline;
+.nav li {
+  list-style: none;
 }
 
-.nav a{
- display: inline-block;
- padding: 1em;
- color: white;
- text-decoration: none;
- font-weight: normal;
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0 0.5em; /* ovak ti se pise skraceno --> nula je za top i bottom, 0.5em je desno i lijevo (gledas u smjeru kazaljke na satu) */
+  text-transform: uppercase;
 }
 
-.nav a:hover{
- background-color: rgba(255,255,255,.4);
- letter-spacing: 4px;
- font-weight: normal;
+.nav a:hover {
+  background-color: rgba(255, 255, 255, .4);
 }
 
-.main-nav{
- text-align: center;
- letter-spacing: 5px;
- font-size: 1.5em;
- font-weight: lighter;
- border-bottom: 1px solid rgba(255,255,255, .3);
-
+.main-header {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  background-color: rgba(0,0,0,.6);
+  background-image:url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-align: center;
 }
 
-.main-nav li {
- padding: 0 5%;
+.band-name {
+  font-size: 4em;
+  color: crimson;
+  font-weight: normal;
 }
 
-.main-header{
- background-color: rgba(0,0,0,.6);
- background-image:url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
- background-blend-mode: multiply;
- background-size: cover;
- padding-bottom: 30px;
-}
-
-.band-name{
- text-align: center;
- margin: 0;
- font-size: 4em;
- color: crimson;
- font-weight: normal;
-}
-
-.band-name-large{
- font-size: 7em;
- margin-left: 2%;
-}
+/* tu imas 7 em, gore imas 4 em, a za istu stvar, ostavi ili jedno ili drugo
+.band-name-large {
+  font-size: 7em; 
+} 
+*/
 
 /* LAYOUT */
