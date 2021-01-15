@@ -1,63 +1,71 @@
 /*  kad nes npr ne radi, inspektaj, vidi kaj je highlightano, do kuda ide, jel siroko 100% ili ide samo do odredene sirine, 
     mijenjaj css direkt u browseru da ubrzas proces i vidis kaj mozes kaj ne mozes delat
 */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 
 * {
- box-sizing: border-box;
- font-family: 'Imbue', serif;
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
 }
 
 html, body {
- padding: 0;
- margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 /* NAVIGATION */
 
 .main-nav {
-  position: absolute;
-  width: 100%;
-  font-size: 1.5em;
-  border-bottom: 1px solid rgba(255,255,255, .3);
- }
+    position: absolute;
+    width: 100%;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
 
 .nav ul {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .nav li {
-  list-style: none;
+    list-style: none;
 }
 
 .nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5em;
-  margin: 0 0.5em; /* ovak ti se pise skraceno --> nula je za top i bottom, 0.5em je desno i lijevo (gledas u smjeru kazaljke na satu) */
-  text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 0.5em; /* ovak ti se pise skraceno --> nula je za top i bottom, 0.5em je desno i lijevo (gledas u smjeru kazaljke na satu) */
+    text-transform: uppercase;
 }
 
 .nav a:hover {
-  background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 .main-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  background-color: rgba(0,0,0,.6);
-  background-image:url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
-  background-blend-mode: multiply;
-  background-size: cover;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-align: center;
 }
 
 .band-name {
-  font-size: 4em;
-  color: crimson;
-  font-weight: normal;
+    font-size: 4em;
+    color: crimson;
+    font-weight: normal;
+    margin-top: 110px;
 }
 
 /* tu imas 7 em, gore imas 4 em, a za istu stvar, ostavi ili jedno ili drugo
@@ -66,4 +74,65 @@ html, body {
 } 
 */
 
-/* LAYOUT */
+/* SECTION */
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.about-band-image {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
+
+.main-footer-container ul {
+    flex-flow: row;
+    text-align: center;
+    margin-left: 0;
+    padding:0;
+    margin-top:70px;
+    align-content: center;
+}
+
+.footer-nav li {
+    display: inline;
+    padding: 0 .5em;
+}
+
+.footer-nav a:hover {
+    padding: 1.2em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-footer-store{
+  display: block;
+}

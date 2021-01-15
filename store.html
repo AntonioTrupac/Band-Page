@@ -2,129 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Peppers | About</title>
+    <title>Peppers | Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="store.html">STORE</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <h1>Red Hot Chilli Peppers</h1>
-    <section>
-        <h2>MUSIC</h2>
+<nav class="nav main-nav">
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="store.html">Store</a>
+        </li>
+
+        <li>
+            <a href="about.html">About</a>
+        </li>
+    </ul>
+</nav>
+
+<header class="main-header">
+    <h1 class="band-name band-name-large">RED HOT CHILLI PEPPERS</h1>
+</header>
+<section>
+    <h2 class="section-header">MUSIC</h2>
+    <div>
+        <div>
+            <strong>Freaky Styley</strong>
+        </div>
+        <img src="Images/freakystyley.jpg"/>
+        <div>
+            <span>$12.99</span>
+            <button role="button">ADD TO CART</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <strong>Blood Sugar Sex Magik</strong>
+        </div>
+        <img src="Images/bssm.jpg"/>
+        <div>
+            <span>$15.99</span>
+            <button role="button">ADD TO CART</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <strong>By The Way</strong>
+        </div>
+        <img src="Images/bytheway.jpg"/>
+        <div>
+            <span>$14.99</span>
+            <button role="button">ADD TO CART</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <strong>Greatest Hits</strong>
+        </div>
+        <img src="Images/greatesthits.jpeg"/>
+        <div>
+            <span>$16.99</span>
+            <button role="button">ADD TO CART</button>
+        </div>
+    </div>
+</section>
+<section>
+    <h2>MERCH</h2>
+    <div>
+        <div>
+            <strong>T-SHIRT RHCP</strong>
+        </div>
+        <img src="Images/merch1.jpg"/>
+        <div>
+            <span>$11.99</span>
+            <button role="button">ADD TO CART</button>
+        </div>
         <div>
             <div>
-                <strong>Freaky Styley</strong>
+                <strong>BADGES RHCP</strong>
             </div>
-            <img src="Images/freakystyley.jpg"/>
+            <img src="Images/merch2.jpeg"/>
             <div>
                 <span>$12.99</span>
                 <button role="button">ADD TO CART</button>
             </div>
         </div>
-        <div>
-            <div>
-                <strong>Blood Sugar Sex Magik</strong>
-            </div>
-            <img src="Images/bssm.jpg"/>
-            <div>
-                <span>$15.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>By The Way</strong>
-            </div>
-            <img src="Images/bytheway.jpg"/>
-            <div>
-                <span>$14.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Greatest Hits</strong>
-            </div>
-            <img src="Images/greatesthits.jpeg"/>
-            <div>
-                <span>$16.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            <div>
-                <strong>T-SHIRT RHCP</strong>
-            </div>
-            <img src="Images/merch1.jpg"/>
-            <div>
-                <span>$11.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-            <div>
-                <div>
-                    <strong>BADGES RHCP</strong>
-                </div>
-                <img src="Images/merch2.jpeg"/>
-                <div>
-                    <span>$12.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
-        </div>
-        <div>
-            <img src="Images/bssm.jpg" width="100">
-            <span>T-shirt</span>
-            &lt;&gt;
-            <span>$15.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
-        </div>
-        <div>
-            <img src="Images/merch2.jpeg" width="100">
-            <span>T-shirt</span>
-            &lt;&gt;
-            <span>$11.99</span>
-            &lt;&gt;
-            <input type="number" value="2">
-            <button role="button">REMOVE</button>
-        </div>
-        <hr>
-        <div>
-            <span>TOTAL</span>
-            <span>$27.98</span>
-        </div>
-        <div>
-            <button role="button">PURCHASE</button>
-        </div>
-    </section>
-    <footer>
-        <h3>Red Hot Chilli Peppers</h3>
-        <ul>
+    </div>
+</section>
+<section>
+    <h2>CART</h2>
+    <div>
+        <strong>ITEM</strong>
+        &lt;&gt;
+        <strong>PRICE</strong>
+        &lt;&gt;
+        <strong>QUANTITY</strong>
+    </div>
+    <div>
+        <img src="Images/bssm.jpg" width="100">
+        <span>T-shirt</span>
+        &lt;&gt;
+        <span>$15.99</span>
+        &lt;&gt;
+        <input type="number" value="1">
+        <button role="button">REMOVE</button>
+    </div>
+    <div>
+        <img src="Images/merch2.jpeg" width="100">
+        <span>T-shirt</span>
+        &lt;&gt;
+        <span>$11.99</span>
+        &lt;&gt;
+        <input type="number" value="2">
+        <button role="button">REMOVE</button>
+    </div>
+    <hr>
+    <div>
+        <span>TOTAL</span>
+        <span>$27.98</span>
+    </div>
+    <div>
+        <button role="button">PURCHASE</button>
+    </div>
+</section>
+<footer class="main-footer main-footer-store">
+    <div class="container main-footer-container">
+        <ul class="nav footer-nav">
             <li><a href="https://facebook.com"><img src="Images/FacebookLogo.png"></a></li>
             <li><a href="https://spotify.com"><img src="Images/Spotify%20Logo.png"></a></li>
             <li><a href="https://youtube.com"><img src="Images/YouTube%20Logo.png"></a></li>
         </ul>
-    </footer>
-</header>
+    </div>
+</footer>
 </body>
 </html>
