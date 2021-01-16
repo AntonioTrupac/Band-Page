@@ -24,7 +24,10 @@ html {
     position: fixed;
     width: 100%;
     font-size: 1.5em;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(165, 155, 155, 0.8);
+    background-image: url("Images/header1.jpeg");
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 .nav ul {
@@ -54,7 +57,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 200px;
     background-color: rgba(165, 155, 155, 0.8);
     background-image: url("Images/header1.jpeg");
     background-blend-mode: multiply;
@@ -66,7 +69,7 @@ html {
     font-size: 4em;
     color: #d8d4d5;
     font-weight: normal;
-    margin-top: 110px;
+    margin-top: 120px;
 }
 
 /* tu imas 7 em, gore imas 4 em, a za istu stvar, ostavi ili jedno ili drugo
@@ -100,23 +103,31 @@ html {
     border-radius: 50%;
 }
 
+.section-paragraph {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 /* FOOTER */
 
 .social-footer {
     display: flex;
     padding: 1rem;
+    background-color: rgba(165, 155, 155, 0.8);
     background-image: url("Images/header1.jpeg");
     background-size: cover;
-    position: fixed;
+    background-blend-mode: multiply;
+    position: sticky;
     bottom: 0;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    height: 84px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .social-footer .social-footer-icons li:last-of-type {
