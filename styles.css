@@ -21,7 +21,7 @@ html {
 /* NAVIGATION */
 
 .main-nav {
-    position: absolute;
+    position: fixed;
     width: 100%;
     font-size: 1.5em;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -46,7 +46,8 @@ html {
 }
 
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .4);
+    color: #ff8989;
+    transition: color 0.3s ease-in;
 }
 
 .main-header {
@@ -54,8 +55,8 @@ html {
     align-items: center;
     justify-content: center;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.8);
-    background-image: url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
+    background-color: rgba(165, 155, 155, 0.8);
+    background-image: url("Images/header1.jpeg");
     background-blend-mode: multiply;
     background-size: cover;
     text-align: center;
@@ -63,7 +64,7 @@ html {
 
 .band-name {
     font-size: 4em;
-    color: crimson;
+    color: #d8d4d5;
     font-weight: normal;
     margin-top: 110px;
 }
@@ -99,40 +100,65 @@ html {
     border-radius: 50%;
 }
 
-.main-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    background-image: url("Images/milky-way-2695569_960_720_36763708_ver1.0.jpg");
-    background-blend-mode: multiply;
+/* FOOTER */
+
+.social-footer {
+    display: flex;
+    padding: 1rem;
+    background-image: url("Images/header1.jpeg");
     background-size: cover;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    height: 150px;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.main-footer-container ul {
-    flex-flow: row;
-    text-align: center;
-    margin-left: 0;
-    padding:0;
-    margin-top:70px;
-    align-content: center;
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
-.footer-nav li {
-    display: inline;
-    padding: 0 .5em;
+.social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+
 }
 
-.footer-nav a:hover {
-    padding: 1.2em;
+.social-footer-icons li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px;
 }
 
-.footer-nav img {
-    width: 30px;
-    height: 30px;
+.social-footer .social-footer-icons .fa {
+    font-size: 2rem;
+    color: #fefefe;
 }
 
-.main-footer-store{
-  display: block;
+.social-footer .social-footer-icons .fa-facebook:hover {
+    color: #3b5998;
+    transition: color 0.3s ease-in;
+}
+
+.social-footer .social-footer-icons .fa-instagram:hover {
+    color: #f833ff;
+    transition: color 0.3s ease-in;
+}
+
+.social-footer .social-footer-icons .fa-youtube:hover {
+    color: #FF0000;
+    transition: color 0.3s ease-in;
+}
+
+.social-footer .social-footer-icons .fa-twitter:hover {
+    color: #1DA1F2;
+    transition: color 0.3s ease-in;
+}
+
+.footer-nav p {
+    display: flex;
+    color: #fefefe;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-left: 190px;
 }
